@@ -3,4 +3,6 @@
 h1 {
   background-color: coral;
   font-family: "Lato", sans-serif;
+  font-size: 10rem;
+  align-items: center;
 } 
