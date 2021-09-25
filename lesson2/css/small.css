@@ -1,11 +1,66 @@
 h1 {
   font-family: 'Gemunu Libre', sans-serif;
+  font-size: 3em;
 }
 
 h2 {
   font-family: 'Hind', sans-serif;
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
 }
 
 h3, h4 {
   font-family: 'Hind', sans-serif;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  font-size: 1rem;
+  background-color: white;
+}
+
+main section {
+  display: block;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+  margin: 2em 2em;
+}
+
+main section img {
+  max-width: 100%;
+}
+
+main section p {
+  text-align: center;
+  padding: 1em;
+}
+
+section h3 {
+  background-color: #1B998B;
+  margin-top: 0;
+  border-radius: 10px 10px 0 0;
+  padding: 1em;
+  font-weight: bold;
+}
+
+header, footer {
+  background-color: #253D5B;
+  color: white;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1em;
+  text-align: center;
+}
+
+footer {
+  font-size: 1.5em;
+}
+footer a {
+  color: white;
 }
