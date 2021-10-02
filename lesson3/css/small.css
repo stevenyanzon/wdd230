@@ -1,0 +1,118 @@
+body {
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+
+header, footer {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #F3DE8A;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+
+header, nav, main, footer {
+  max-width: auto;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 25px;
+}
+
+nav {
+  background-color: #66666E;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  flex: 1 1 auto;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: .80rem;
+  flex: 1 1 auto;
+  font-size: 20px;
+  
+}
+
+nav a:hover {
+  color: #00A8E8;
+}
+
+main {
+  padding: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  flex: 1 1 auto;
+}
+
+.colors {
+  width: 100%;
+  min-width: 350px;
+  margin: auto;
+  text-align: center;
+  
+}
+.colors th {
+  background-color: #66666E;
+  color: white;
+  padding: 3px;
+  font-size: 20px;
+}
+
+.colors td{
+  margin-top: auto;
+  width: 20%;
+  height: 15em;
+  outline-style: inset;
+  outline-color: black;
+  
+}
+
+.primary {
+  background-color: #F3DE8A;
+}
+.secondary {
+  background-color: #66666E;
+  color: white;
+}
+.accent1 {
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 15px;
+}
