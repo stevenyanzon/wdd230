@@ -5,10 +5,16 @@ header, main, footer {
 }
 
 header {
-  background-color: coral;
+  background-color: #66666E;
   padding: 1rem;
   margin-top: 10px;
+  display: flex;
 } 
+
+.headings {
+  color: #fff;
+  margin: 0 0 0 30px;
+}
 
 h1 { 
   font-family: 'Lato', sans-serif;
@@ -31,12 +37,17 @@ img {
 
 footer {
   text-align: center;
-  background-color: coral;
+  background-color: #66666E;
   max-width: 800px;
   height: auto;
   padding: 1rem;
+  color: #fff;
 }
 
 li {
   font-family: 'Roboto', sans-serif;
+}
+
+footer a {
+  color: #00A8E8;
 }
