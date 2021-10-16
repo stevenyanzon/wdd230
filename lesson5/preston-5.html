@@ -13,6 +13,13 @@
   <link rel="stylesheet" href="css/large.css">
 </head>
 <body>
+  <div id="bannerbox" style="display: block;">
+    <p>Saturday = Preston Pancakes in the park!
+    <br>
+      9:00 a.m. Saturday at the city park pavilion!
+    </p>
+    
+  </div>
   <header>
     <picture>
       <img src="images/beelogo.png" alt="website-logo">
@@ -33,9 +40,57 @@
     </ul>
   </nav>
   <main>
-    <h2>Preston Idaho</h2>
-    <div class="placeholder">Hero w/ weather summary</div>
-    <div class="placeholder">Five Day Forecast</div>
+    <h3>Preston Idaho</h3>
+    <div id="hero">
+      <img src="images/prestontown1.jpg" alt="preston town image">
+      <section id="weathersummary">
+        <h3>Weather Summary</h3>
+        <label>Currently:</label>
+        <p>Sunny</p>
+        <label>High:</label>
+        <p>76°F</p>
+        <label>Wind Chill:</label>
+        <p>°F</p>
+        <label>Humidity:</label>
+        <p>69%</p>
+        <label>Wind Speed: </label>
+        <p>5 mph</p>
+      </section>
+    </div>
+    <div id="forecast">
+      <h3>Five Day Forecast</h3>
+      <table id="fivedayforecast">
+          <tr>
+            <th class="forecastday">Wed</th>
+            <th class="forecastday">Thur</th>
+            <th class="forecastday">Fri</th>
+            <th class="forecastday">Sat</th>
+            <th class="forecastday">Sun</th>
+          </tr>
+          <tr>
+            <td class="foretemp">
+              <img src="images/sun.png" alt="sunlogo">
+              <p>89°F</p>
+            </td>
+            <td class="foretemp">
+              <img src="images/sun.png" alt="sunlogo">
+              <p>87°F</p>
+            </td>
+            <td class="foretemp">
+              <img src="images/sun.png" alt="sunlogo">
+              <p>78°F</p>
+            </td>
+            <td class="foretemp">
+              <img src="images/sun.png" alt="sunlogo">
+              <p>75°F</p>
+            </td>
+            <td class="foretemp">
+              <img src="images/sun.png" alt="sunlogo">
+              <p>72°F</p>
+            </td>
+          </tr>
+      </table>
+    </div>
     <div class="placeholder">Article</div>
     <div class="placeholder">Contact Information</div>
 
@@ -47,5 +102,6 @@
   </footer>
 <script src="js/scripts.js"></script>
 <script defer src="js/dates.js"></script>
+
 </body>
 </html>

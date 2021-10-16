@@ -58,6 +58,19 @@
         font-size: 1rem;
       }
 
+      h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 25px;
+      }
+
+      #weathersummary {
+        display: grid;
+        position: absolute;
+        top: 220px;
+        left: 200px;
+        background-color: rgba(49,49,49,0.7);
+        padding: 20px;
+      }
 
 
 } /*end large */

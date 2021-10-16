@@ -87,8 +87,11 @@ nav ul li a {
   border-top: 1px solid rgba(0,0,0,0.3);
 }
 
-nav ul li.preston a{background-color: rgba(0,0,0,0.4); color: #fff;}
+nav ul li.preston a{background-color: rgba(0,0,0,0.4); color: #00A8E8;}
 
+nav ul li.preston a:hover {
+  color: #fff;
+}
 
 nav ul li a:hover {background-color: rgba(0,0,0,0.4);
 color: #00A8E8}
