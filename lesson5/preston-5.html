@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Steven Yanzon's Preston Town Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Weather Website Assignment of Steven Yanzon in WDD230 Week2">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+  <header>
+    <picture>
+      <img src="images/beelogo.png" alt="website-logo">
+    </picture>
+    <section class="headings"><h1>WeatherBee</h1>
+      <div class="motto">Reach for the weather</div>
+    </section>
+  </header>
+  <nav>
+    <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hidenav">
+      <li><a href="#">Home</a></li>
+      <li class="preston"><a href="#">Preston</a></li>
+      <li><a href="#">Soda Springs</a></li>
+      <li><a href="#">Fish Haven</a></li>
+      <li><a href="#">Storm Center</a></li>
+      <li><a href="#">Gallery</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h2>Preston Idaho</h2>
+    <div class="placeholder">Hero w/ weather summary</div>
+    <div class="placeholder">Five Day Forecast</div>
+    <div class="placeholder">Article</div>
+    <div class="placeholder">Contact Information</div>
+
+  </main>
+  <footer>
+    &copy; <span id="copyrightyear"></span> | Steven Aldo T.  Yanzon | WDD230 | <a href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a>
+    <br>
+    <span id="currentdate"></span>
+  </footer>
+<script src="js/scripts.js"></script>
+<script defer src="js/dates.js"></script>
+</body>
+</html>

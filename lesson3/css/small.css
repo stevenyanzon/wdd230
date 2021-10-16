@@ -46,7 +46,7 @@ nav ul li a {
   padding: .80rem;
   flex: 1 1 auto;
   font-size: 20px;
-  
+  font-family: 'Montserrat', sans-serif;
 }
 
 nav a:hover {
@@ -55,6 +55,7 @@ nav a:hover {
 
 main {
   padding: 20px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 img {
@@ -64,6 +65,7 @@ img {
 
 footer {
   flex: 1 1 auto;
+  font-size: 18px;
 }
 
 .colors {
@@ -85,8 +87,7 @@ footer {
   width: 20%;
   height: 15em;
   outline-style: inset;
-  outline-color: black;
-  
+  outline-color: black; 
 }
 
 .primary {
@@ -99,6 +100,31 @@ footer {
 .accent1 {
   background-color: black;
   color: white;
+}
+
+.typog {
+  width: 50rem;
+  min-width: 300px;
+  margin: auto;
+  text-align: center;
+  
+}
+
+.typog th {
+  background-color: #66666E;
+  color: white;
+  padding: 3px;
+  font-size: 20px;
+  outline-style: inset;
+  outline-color: black; 
+}
+
+.typog td{
+  margin-top: auto;
+  width: 50rem;
+  height: 2em;
+  outline-style: inset;
+  outline-color: black; 
 }
 
 h1 {

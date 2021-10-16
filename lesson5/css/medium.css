@@ -1,0 +1,19 @@
+@media only screen and (min-width: 38rem) {
+      
+  header .headings {
+    font-size: 1.1rem;
+  }
+
+  header .motto {
+    font-size: .8rem;
+  }
+
+  footer {
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+    font-size: 1rem;
+    margin: 0 auto;
+    display: block;
+  }
+}  
