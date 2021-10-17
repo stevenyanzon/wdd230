@@ -123,10 +123,11 @@ h3 {
 
 #weathersummary {
   display: grid;
+  grid-template-columns: 1fr 1fr;
   position: absolute;
-  top: 210px;
+  bottom: 130px;
   left: 20px;
-  background-color: rgba(49,49,49,0.7);
+  background-color: rgba(49,49,49,0.8);
   padding: 10px;
 }
 
@@ -166,6 +167,7 @@ h3 {
   background-color: #66666E;
   color: #fff;
   font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
 }
 
 .foretemp {
@@ -193,5 +195,71 @@ h3 {
   font-size: 20px;
 }
 
+.articlearea {
+  max-width: 850px;
+  margin: 0 auto; 
+}
 
+.article {
+  position: relative;
+  margin: 25px auto;
+  padding: 1.2rem;
+  box-shadow: 0 0 5px #333;
+  background-color: rgb(218,218,218);
+  text-align: left;
+}
 
+.article img {
+  float: right;
+  margin: 1rem;
+  width: 300px;
+  height: auto;
+  border: 1px solid rgb(41,42,41);
+  box-shadow: 0 0 5px #333;
+}
+
+.article p, h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.article h5 a {
+  text-decoration: none;
+  color: #00A8E8;
+  margin-bottom: 20px;
+}
+
+.contactarea {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1000px;
+  margin: 25px auto;
+  justify-items: center;
+  align-items: center;
+  padding: 1.2rem;
+  background-color: rgb(218,218,218);
+  box-shadow: 0 0 5px #333;
+}
+
+.prestonmap {
+  display: block;
+  box-shadow: 0 0 2px #333;
+  height: auto;
+  margin: 1rem;
+}
+
+.contactinfo {
+  line-height: 1.5rem;
+}
+
+.contactinfo h4 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.contactinfo span {
+  line-height: 1.8rem;
+}
+.socialicons {
+  height: auto;
+  padding: 1rem;
+  justify-content: space-evenly;
+}

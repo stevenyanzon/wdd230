@@ -9,10 +9,12 @@ const options = {
     year: "numeric"
 }
 
+document.getElementById("currentdate").textContent = d.toLocaleDateString('en-UK', options);
+
 function bannerBox() {
     
-    const d = new Date();
-    const today = d.getDay();
+    const n = new Date();
+    const today = n.getDay();
     const banner = document.querySelector("#bannerbox");
     
     if (today == 5) {

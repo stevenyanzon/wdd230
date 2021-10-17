@@ -65,10 +65,11 @@
 
       #weathersummary {
         display: grid;
+        grid-template-columns: 1fr 1fr;
         position: absolute;
-        top: 350px;
+        bottom: 50px;
         left: 200px;
-        background-color: rgba(49,49,49,0.7);
+        background-color: rgba(49,49,49,0.8);
         padding: 20px;
       }
 
