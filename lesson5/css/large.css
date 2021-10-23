@@ -21,7 +21,7 @@
       nav ul.hidenav {display: flex;}
       
       nav ul {
-        max-width: auto;
+        width: 100%;
         margin: 0;
       }
       
