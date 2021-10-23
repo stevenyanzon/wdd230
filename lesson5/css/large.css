@@ -8,7 +8,12 @@
       header .motto {
         font-size: .9rem;
       }
-
+      
+      .logopic {
+        width: 100px;
+        height: auto;
+      }
+      
       nav {
         background-color: #66666E;
       }

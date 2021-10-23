@@ -28,6 +28,10 @@ header img {
   margin: 10px 0 0 5px;
 }
 
+.logopic {
+  width: 80px;
+  height: auto;
+}
 .motto {
   font-style: italic;
   letter-spacing: .5pt;
@@ -216,6 +220,11 @@ table {
   box-shadow: 0 0 5px #333;
 }
 
+.articlepic {
+  width: 330px;
+  height: auto;
+}
+
 .article p, h3 {
   font-family: 'Montserrat', sans-serif;
 }
@@ -238,8 +247,9 @@ table {
   background-color: #EEF1EF;
 }
 
-.prestonmap {
+.prestonmap img {
   width: 250px;
+  height: auto;
   margin: 0 auto;
   align-items: center;
 }
@@ -256,6 +266,7 @@ table {
   line-height: 1.8rem;
 }
 .socialicons {
+  width: 70px;
   height: auto;
   padding: 1rem;
   justify-content: space-evenly;
