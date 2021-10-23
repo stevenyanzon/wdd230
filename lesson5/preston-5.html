@@ -41,56 +41,41 @@
   </nav>
   <main>
     <h3>Preston Idaho</h3>
-    <div id="hero">
-      <img src="images/prestontown3.jpg" alt="preston town image">
-      <section id="weathersummary">
-        <h3>Weather Summary</h3>
-        <label>Currently:</label>
-        <p>Sunny</p>
-        <label>High:</label>
-        <p>76°F</p>
-        <label>Wind Chill:</label>
-        <p>°F</p>
-        <label>Humidity:</label>
-        <p>69%</p>
-        <label>Wind Speed: </label>
-        <p>5 mph</p>
-      </section>
+    <div class="heroarea">
+      <div id="hero">
+        <img class="heroimage" src="images/town.jpeg" alt="preston town image">
+      </div>  
+        <section id="weathersummary">
+          <h3>Weather Summary</h3>
+          <p>Currently: Sunny</p>
+          <p>High: 76°F</p>
+          <p>Wind Chill: °F</p>
+          <p>Humidity: 69%</p>
+          <p>Wind Speed: 5 mph</p>
+        </section>  
     </div>
-    <div id="forecast">
-      <h3>Five Day Forecast</h3>
-      <table id="fivedayforecast">
-          <tr>
-            <th class="forecastday">Wed</th>
-            <th class="forecastday">Thur</th>
-            <th class="forecastday">Fri</th>
-            <th class="forecastday">Sat</th>
-            <th class="forecastday">Sun</th>
-          </tr>
-          <tr>
-            <td class="foretemp">
-              <img src="images/sun.png" alt="sunlogo">
-              <p>89°F</p>
-            </td>
-            <td class="foretemp">
-              <img src="images/sun.png" alt="sunlogo">
-              <p>87°F</p>
-            </td>
-            <td class="foretemp">
-              <img src="images/sun.png" alt="sunlogo">
-              <p>78°F</p>
-            </td>
-            <td class="foretemp">
-              <img src="images/sun.png" alt="sunlogo">
-              <p>75°F</p>
-            </td>
-            <td class="foretemp">
-              <img src="images/sun.png" alt="sunlogo">
-              <p>72°F</p>
-            </td>
-          </tr>
-      </table>
+    <div class="forecastarea">
+      <div class="fiveday">
+        <h3>Five Day Forecast</h3>
+        <table>
+            <tr>
+              <th>Wed</th>
+              <th>Thu</th>
+              <th>Fri</th>
+              <th>Sat</th>
+              <th>Sun</th>
+            </tr>
+            <tr>
+              <td>☀️<br>89°F</td>
+              <td>☀️<br>87°F</td>
+              <td>☀️<br>78°F</td>
+              <td>☀️<br>75°F</td>
+              <td>☀️<br>72°F</td>
+            </tr>
+        </table>
+      </div>
     </div>
+
     <div class="articlearea">
       <div class="article">
         <img src="images/lights1.jpg" alt="christmaslights">
@@ -105,32 +90,29 @@
         </p>
       </div>
     </div>
+    
+  </main>
+  <footer>
     <div class="contactarea">
-      <img class="prestonmap" src="images/prestonmap1.jpg" alt="map of preston from google maps">
+      <div class="prestonmap">
+        <img src="images/prestonmap1.jpg" alt="map of preston from google maps">
+      </div>
       <section class="contactinfo">
         <h4>Weather Bee</h4>
-        <span>
-          📍517 N 8th E, Preston, ID 83263
-        </span>
-        <br>
-        <span>
-          📞(000)000-000
-        </span>
-        <br>
-        <span>
-          📧weatherbee@notreal.com
-        </span>
+          <p>📍517 N 8th E, Preston, ID 83263</p>
+          <p>📞(000)000-000</p>
+          <p>📧weatherbee@notreal.com</p>
         <br>
         <a href="https://www.facebook.com/" target="_blank"><img class="socialicons" src="images/facebook.png" alt="facebook icon"></a>
         <a href="https://twitter.com/" target="_blank"><img class="socialicons" src="images/twitter1.png" alt="twitter icon"></a>
         <a href="https://www.instagram.com/" target="_blank"><img class="socialicons" src="images/instagram.png" alt="instagram icons"></a>
       </section>
     </div>
-  </main>
-  <footer>
-    &copy; <span id="copyrightyear"></span> | Steven Aldo T.  Yanzon | WDD230 | <a href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a>
-    <br>
-    <span id="currentdate"></span>
+    <div class="bottompage">
+      &copy; <span id="copyrightyear"></span> | Steven Aldo T.  Yanzon | WDD230 | <a href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a>
+      <br>
+      <span id="currentdate"></span>
+    </div>
   </footer>
 <script src="js/scripts.js"></script>
 <script defer src="js/dates.js"></script>

@@ -42,6 +42,8 @@ footer {
   font-size: .9rem;
   margin: 0 auto;
   display: block;
+  border: 1px solid black;
+  box-shadow: 0 0 5px #333;
 }
 
 .placeholder {
@@ -109,6 +111,7 @@ nav ul.hidenav {display: none;}
 
 main {
   display: block;
+  margin: 0 auto;
 }
 
 h3 {
@@ -116,72 +119,65 @@ h3 {
   font-size: 20px;
 }
 
+.heroarea {
+  margin: 10px auto;
+  position: relative;
+  width: 100%;
+  height: 250px;
+}
+
+#hero {
+  margin: 10px auto;
+  width: 100%;
+  height: 250px;
+}
+
 #hero img {
+  width: 100%;
+  height: 300px;
+}
+
+section {
+  display: block;
+}
+
+div {
+  display: block;
+}
+
+body {
+  display: block;
   max-width: 100%;
-  height: auto;
 }
 
 #weathersummary {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  position: absolute;
-  bottom: 130px;
-  left: 20px;
   background-color: rgba(49,49,49,0.8);
   padding: 10px;
+  margin-top: 4rem;
+  text-align: center;
+  border: 1px solid black;
 }
 
 #weathersummary h3 {
   font-family: 'Montserrat', sans-serif;
-  grid-column: 1/3;
-  margin: 0;
   color: #fff;
   font-size: 18px;
 }
 
-#weathersummary label {
-  font-family: 'Montserrat', sans-serif;
-  text-align: right;
-  color: #fff;
-  height: auto;
-  margin: 2px 2px 0 0;
-  font-size: 15px;
-}
 
 #weathersummary p {
-  margin: 0 0 0 2px;
-  padding: 1px;
+  font-family: 'Montserrat', sans-serif;
   height: auto;
-  color: #F3DE8A;
+  color: #fff;
   font-size: 15px;
 }
 
-#fivedayforecast {
-  width: 100%;
-  min-width: 300px;
-  margin: auto;
-  text-align: center;
+.fiveday {
+  display: none;
 }
 
-.forecastday {
-  background-color: #66666E;
-  color: #fff;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-}
-
-.foretemp {
-  outline-style: inset;
-  outline-color: rgba(0,0,0,0.3); 
-  align-items: center;
-  height: auto;
-  padding: 2px;
-}
-
-.foretemp p {
-  align-items: center;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
+table {
+  display: table;
 }
 
 #bannerbox {
@@ -196,17 +192,19 @@ h3 {
 }
 
 .articlearea {
-  max-width: 850px;
-  margin: 0 auto; 
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  margin-top: 19rem;
 }
 
 .article {
-  position: relative;
   margin: 25px auto;
   padding: 1.2rem;
   box-shadow: 0 0 5px #333;
-  background-color: rgb(218,218,218);
+  background-color: #EEF1EF;
   text-align: left;
+  border: 1px solid black;
 }
 
 .article img {
@@ -230,25 +228,24 @@ h3 {
 
 .contactarea {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   max-width: 1000px;
-  margin: 25px auto;
+  margin: 0 auto;
+  margin-bottom: 0;
   justify-items: center;
   align-items: center;
   padding: 1.2rem;
-  background-color: rgb(218,218,218);
-  box-shadow: 0 0 5px #333;
+  background-color: #EEF1EF;
 }
 
 .prestonmap {
-  display: block;
-  box-shadow: 0 0 2px #333;
-  height: auto;
-  margin: 1rem;
+  width: 250px;
+  margin: 0 auto;
+  align-items: center;
 }
 
 .contactinfo {
-  line-height: 1.5rem;
+  line-height: 10px;
 }
 
 .contactinfo h4 {

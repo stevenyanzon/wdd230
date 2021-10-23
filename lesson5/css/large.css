@@ -63,15 +63,6 @@
         font-size: 25px;
       }
 
-      #weathersummary {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        position: absolute;
-        bottom: 50px;
-        left: 200px;
-        background-color: rgba(49,49,49,0.8);
-        padding: 20px;
-      }
 
 
 } /*end large */
