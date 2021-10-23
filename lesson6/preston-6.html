@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Steven Yanzon's Preston Town Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Weather Website Assignment of Steven Yanzon in WDD230 Week2">
+  <link rel="stylesheet" href="css/normalize.css">
+  <!--<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans&display=swap" rel="stylesheet">-->
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+  <div id="bannerbox" style="display: block;">
+    <p>Saturday = Preston Pancakes in the park!
+    <br>
+      9:00 a.m. Saturday at the city park pavilion!
+    </p>
+    
+  </div>
+  <header>
+    <picture>
+      <img class="logopic" src="images/beelogo.png" alt="website-logo">
+    </picture>
+    <section class="headings"><h1>WeatherBee</h1>
+      <div class="motto">Reach for the weather</div>
+    </section>
+  </header>
+  <nav>
+    <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hidenav">
+      <li><a href="#">Home</a></li>
+      <li class="preston"><a href="#">Preston</a></li>
+      <li><a href="#">Soda Springs</a></li>
+      <li><a href="#">Fish Haven</a></li>
+      <li><a href="#">Storm Center</a></li>
+      <li><a href="#">Gallery</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h3>Preston Idaho</h3>
+    <div class="heroarea">
+      <div id="hero">
+        <picture>
+          <source srcset="images/herolarge.jpg" media="(min-width: 800px)">
+          <source srcset="images/heromedium.jpg" media="(min-width: 520px) and (max-width: 799px)">
+          <img class="heroimage" src="images/herosmall.jpg" alt="preston town image">
+        </picture>
+      </div>  
+        <section id="weathersummary">
+          <h3>Weather Summary</h3>
+          <p>Currently: Sunny</p>
+          <p>Temperature: <span id="temp">50</span>°F</p>
+          <p>Wind Chill: <span id="chill"></span>°F</p>
+          <p>Humidity: 69°F</p>
+          <p>Wind Speed: <span id="speed">5</span> Mph</p>              
+        </section>  
+    </div>
+    <div class="forecastarea">
+      <div class="fiveday">
+        <h3>Five Day Forecast</h3>
+        <table>
+            <tr>
+              <th>Wed</th>
+              <th>Thu</th>
+              <th>Fri</th>
+              <th>Sat</th>
+              <th>Sun</th>
+            </tr>
+            <tr>
+              <td>☀️<br>89°F</td>
+              <td>☀️<br>87°F</td>
+              <td>☀️<br>78°F</td>
+              <td>☀️<br>75°F</td>
+              <td>☀️<br>72°F</td>
+            </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="articlearea">
+      <div class="article">
+        <img class="articlepic" src="images/lights1.jpg" alt="christmaslights">
+        <h3>Festival of Lights</h3>
+        <h5><a href="https://kids.kiddle.co/Preston,_Idaho" target="_blank">kids.kiddle.co</a></h5>
+        <p>Each year Preston holds the "Idaho Festival of Lights", which starts the day after Thanksgiving and goes until December 31. 
+          The festival was started by two local business men (Wayne Bell and Walter Ross) along with many other community organizations to help celebrate Christmas within the community. 
+          The festival consists of a lighted parade, fireworks, and displays in the city park. The merchants along the main street of Preston have their store fronts decorated with Christmas lights during the festival.
+        <br>
+        A key event of the festival is the International Bed Race, which is held on the Saturday following Thanksgiving on the main street of Preston. 
+        Additional events are a kids' parade and free movie.
+        </p>
+      </div>
+    </div>
+    
+  </main>
+  <footer>
+    <div class="contactarea">
+      <div class="prestonmap">
+        <img src="images/prestonmap1.jpg" alt="map of preston from google maps">
+      </div>
+      <section class="contactinfo">
+        <h4>Weather Bee</h4>
+          <p>📍517 N 8th E, Preston, ID 83263</p>
+          <p>📞(000)000-000</p>
+          <p>📧weatherbee@notreal.com</p>
+        <br>
+        <a href="https://www.facebook.com/" target="_blank"><img class="socialicons" src="images/facebook.png" alt="facebook icon"></a>
+        <a href="https://twitter.com/" target="_blank"><img class="socialicons" src="images/twitter1.png" alt="twitter icon"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img class="socialicons" src="images/instagram.png" alt="instagram icons"></a>
+      </section>
+    </div>
+    <div class="bottompage">
+      &copy; <span id="copyrightyear"></span> | Steven Aldo T.  Yanzon | WDD230 | <a href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a>
+      <br>
+      <span id="currentdate"></span>
+    </div>
+  </footer>
+<script src="js/scripts.js"></script>
+<script defer src="js/dates.js"></script>
+<script defer src="js/windchill.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+  WebFont.load({
+    google: {
+      families: ["Open Sans","Montserrat"]
+    }
+  });
+</script>
+
+</body>
+</html>
