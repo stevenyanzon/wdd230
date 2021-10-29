@@ -214,18 +214,9 @@ table {
 }
 
 .article img {
-  float: right;
-  margin: 1rem;
-  width: 300px;
-  height: auto;
-  border: 1px solid rgb(41,42,41);
-  box-shadow: 0 0 5px #333;
+  width: 100%;
 }
 
-.articlepic {
-  width: 330px;
-  height: auto;
-}
 
 .article p, h3 {
   font-family: 'Montserrat', sans-serif;
@@ -250,10 +241,7 @@ table {
 }
 
 .prestonmap img {
-  width: 250px;
-  height: auto;
-  margin: 0 auto;
-  align-items: center;
+  width: 100%;
 }
 
 .contactinfo {

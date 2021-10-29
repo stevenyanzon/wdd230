@@ -64,6 +64,22 @@
     margin: 0 auto;
   }
 
+  .article img {
+    float: right;
+    margin: 1rem;
+    width: 400px;
+    height: 250px;
+    border: 1px solid rgb(41,42,41);
+    box-shadow: 0 0 5px #333;
+  }
+  
+  .prestonmap img {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    align-items: center;
+  }
+
   .contactarea {
     grid-template-columns: 1fr 1fr;
   }
