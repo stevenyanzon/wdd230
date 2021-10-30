@@ -1,0 +1,87 @@
+@media only screen and (min-width: 38rem) {
+      
+  header .headings {
+    font-size: 1.1rem;
+  }
+
+  header .motto {
+    font-size: .8rem;
+  }
+
+  footer {
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+    font-size: 1rem;
+    margin: 0 auto;
+    display: block;
+ 
+  }
+
+  h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 23px;
+  } 
+
+
+  #weathersummary {
+    position: absolute;
+    top: 20px;
+    left: 75px;
+    background-color: rgba(49,49,49,0.8);
+    padding: 10px;
+    margin: auto;
+  }
+  
+
+  .forecastarea {
+    margin-top: 4rem;
+    margin-bottom: 5px;
+    max-width: 100%;
+    border: solid 1px black;
+    padding: 10px;
+    box-shadow: 0 0 5px #333;
+    background-color: #EEF1EF;
+
+  }
+
+  .fiveday {
+    display: block;
+    text-align: center;
+    padding: 5px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .fiveday table {
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    font-size: 2rem;
+  }
+
+  .articlearea {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .article img {
+    float: right;
+    margin: 1rem;
+    width: 400px;
+    height: 250px;
+    border: 1px solid rgb(41,42,41);
+    box-shadow: 0 0 5px #333;
+  }
+  
+  .prestonmap img {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .contactarea {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}  
