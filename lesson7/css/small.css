@@ -39,6 +39,10 @@ header img {
   margin: 0 0 0 18px;
 }
 
+p {
+  font-family: 'Montserrat', sans-serif;
+}
+
 footer {
   max-width: 100%;
   text-align: center;
@@ -266,4 +270,40 @@ table {
   height: auto;
   padding: 1rem;
   justify-content: space-evenly;
+}
+
+img[data-src] {
+  filter: blur(0.5em);
+}
+
+img {
+  filter: blur(0em);
+  transition: filter 0.9s;
+}
+
+.weatherGallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+  row-gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+}
+
+figure img:hover {
+  box-shadow: 0 0 50px #333;
+}
+
+figcaption {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  padding: 3px;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0 auto;
 }
