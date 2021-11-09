@@ -5,6 +5,8 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 
+
+
 header, footer {
   font-family: 'Open Sans', sans-serif;
   background-color: #F3DE8A;
@@ -127,7 +129,7 @@ main {
   margin: 0 auto;
 }
 
-h3 {
+h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
 }
@@ -252,13 +254,14 @@ table {
 
 .prestonmap img {
   width: 100%;
+  height: auto;
 }
 
 .contactinfo {
   line-height: 10px;
 }
 
-.contactinfo h4 {
+.contactinfo h3 {
   font-family: 'Montserrat', sans-serif;
 }
 
