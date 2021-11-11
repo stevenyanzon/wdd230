@@ -23,7 +23,7 @@ h1 {
 
 h2 {
   font-family: fantasy;
-  font-size: 35px;
+  font-size: 10px;
   color: white;
 }
 
@@ -47,8 +47,8 @@ section:hover {
 img {
   display: block;
   margin: auto;
-  width: 250px;
-  height:300px;
+  width: 200px;
+  height: 250px;
   padding-bottom: 20px;
   object-fit: cover;
 }
