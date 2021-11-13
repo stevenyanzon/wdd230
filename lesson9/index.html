@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Steven Yanzon's Preston Town Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Weather Website Assignment of Steven Yanzon in WDD230 Week2">
+  <link rel="stylesheet" href="css/normalize.css">
+  <!--<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans&display=swap" rel="stylesheet">-->
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+  <div id="bannerbox" style="display: block;">
+    <p>Saturday = Preston Pancakes in the park!
+    <br>
+      9:00 a.m. Saturday at the city park pavilion!
+    </p>
+    
+  </div>
+  <header>
+    <picture>
+      <img class="logopic" src="images/beelogo1.png" width="250" height="250" alt="website-logo">
+    </picture>
+    <section class="headings"><h1>WeatherBee</h1>
+      <div class="motto">Reach for the weather</div>
+    </section>
+  </header>
+  <nav>
+    <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hidenav">
+      <li class="home"><a href="#">Home</a></li>
+      <li><a href="https://stevenyanzon.github.io/wdd230/lesson6/preston-6.html">Preston</a></li>
+      <li><a href="#">Soda Springs</a></li>
+      <li><a href="#">Fish Haven</a></li>
+      <li><a href="https://stevenyanzon.github.io/wdd230/lesson8/stormcenter.html">Storm Center</a></li>
+      <li><a href="https://stevenyanzon.github.io/wdd230/lesson7/gallery-7.html">Gallery</a></li>
+    </ul>
+  </nav>
+  <main class="home">
+    <div class="heroArea">
+      <picture>
+        <source srcset="images/girlsummer-large.jpg" media="(min-width: 800px)">
+        <source srcset="images/girlsummer-medium.jpg" media="min-width: 520px) and (max-width: 799px)">
+        <img src="images/girlsummer-small.jpg" alt="girl picking flowers">
+      </picture>
+    </div>
+    <section class="towns">
+      <h2 id="townHome">Towns</h2>
+    </section>
+    <article class="homeArticle">
+     <h2>Cool facts about bees</h2>
+     <img src="images/bees.jpg" alt="bee on a flower">
+     <h5><a href="https://saveourbees.com.au/11-unbelievable-facts-about-bees/" target="_blank" rel="noopener">saveourbees.com.au</a></h5>
+      <p><b>1. A Honey bee colony has about 50,000 bees</b>
+      <br>More than 99% are infertile female bees(worker bees). At most only few hundred male
+      <br>bees (drones) and just one mother (the queen bee).</p>
+
+      <p><b>2. A queen bee will only mate once in its lifetime</b>
+      <br>This is usually in the first 10 days of its life when it will go on a mating
+      <br>flight to mate with about 15 to 20 drones in mid-air. It will then store about
+      <br>100 million sperm in its spermatheca for its entire life.</p>
+
+      <p><b>3. A queen bee can lay twice it's body weight in eggs each day</b>
+      <br>That's about 2500 eggs in a single day.</p>
+
+      <p><b>4. Bees have 4 wings, 6 legs and 5 eyes</b>
+      <br>This includes 3 simple eyes and 2 compound eyes made up of around
+      <br>7,000 facets or lenses each.</p>
+
+      <p><b>5. Bees see blue better than red</b>
+      <br>This enables bees to see ultraviolet light and use this to help
+      <br>navigate their way around and assist identifying flowers as they pollinate.
+      <br>Yet bees cannot distinguish red colours well at all.</p>
+
+      <p><b>6. A bee flaps its' wings up to 200 times per second</b>
+      <br>This produces the familiar bee buzz. This rapid flapping produces a small
+      <br>positive charge that attracts pollen to its furry body from flowers that are
+      <br>negatively charged naturally.</p>
+
+      <p><b>7. Worker bees communicate with a dance</b>
+      <br>Whilst all bees produce and sense pheromones to communicate, only
+      <br>the worker bees dance to communicate with other workers. This is known as
+      <br>the waggle dance. She will rapidly shake her body from side to side in a
+      <br>certain direction to tell worker bees which direction and how far food
+      <br>sources can be found.</p>
+
+      <p><b>8. Bees collect and produce more than just honey</b>
+      <br>These include many things used by the bees and harvested by humans including
+      <br>propolis, pollen, beeswax, royal jelly and bee venom.</p>
+
+      <p><b>9. A honey bee will produce about 1/12 of a teaspoon
+      <br>of honey in it's lifetime</b>
+      <br>This depends on where the bees live and from which flowers bees are able to
+      <br>forage. This means bees will collectively visit thousands of flowers to make
+      <br>just one teaspoon full of honey.</p>
+
+      <p><b>10. The drones only purpose in life is to mate with a queen bee</b>
+      <br>It does not work or forage at all and can not sting.</p>
+      
+      <p><b>11. Drones do not have a father</b>
+      <br>But have only a mother and a grandfather. The drone is created from and
+      <br>unfertilised egg and inherits all its genetics from its mother and grandfather.
+      <br>This is known as parthenogenesis.</p>
+    </article>
+  </main>
+  <footer>
+    <div class="contactarea">
+      <div class="prestonmap">
+        <img src="images/prestonmap2.jpg" width="511" height="586" alt="map of preston from google maps">
+      </div>
+      <section class="contactinfo">
+        <h4>Weather Bee</h4>
+          <p rel="noopener">📍517 N 8th E, Preston, ID 83263</p>
+          <p rel="noopener">📞(000)000-000</p>
+          <p rel="noopener">📧weatherbee@notreal.com</p>
+        <br>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener"><img class="socialicons" src="images/facebook.png" width="64" height="64" alt="facebook icon"></a>
+        <a href="https://twitter.com/" target="_blank" rel="noopener"><img class="socialicons" src="images/twitter1.png" width="64" height="64" alt="twitter icon"></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener"><img class="socialicons" src="images/instagram.png" width="64" height="64" alt="instagram icons"></a>
+      </section>
+    </div>
+    <div class="bottompage">
+      &copy; <span id="copyrightyear"></span> | Steven Aldo T.  Yanzon | WDD230 | <a href="https://www.byui.edu/online" target="_blank" rel="noopener">BYUI Online Learning</a>
+      <br>
+      <span id="currentdate"></span>
+    </div>
+  </footer>
+<script defer src="js/lazyload.js"></script>
+<script defer src="js/scripts.js"></script>
+<script defer src="js/dates.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+  WebFont.load({
+    google: {
+      families: ["Open Sans","Montserrat"]
+    }
+  });
+</script>
+
+</body>
+</html>
