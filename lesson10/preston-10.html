@@ -46,37 +46,46 @@
         <picture>
           <source srcset="images/prestontown-large.jpg" media="(min-width: 800px)">
           <source srcset="images/prestontown-medium.jpg" media="(min-width: 520px) and (max-width: 799px)">
-          <img class="heroimage" src="images/"" alt="preston town image">
+          <img class="heroimage" src="images/prestontown-small.jpg" alt="preston town image">
         </picture>
       </div>  
         <section id="weathersummary">
           <h3>Weather Summary</h3>
-          <p>Currently: Sunny</p>
-          <p>Temperature: <span id="temp">50</span>°F</p>
-          <p>Wind Chill: <span id="chill"></span>°F</p>
-          <p>Humidity: 69°F</p>
-          <p>Wind Speed: <span id="speed">5</span> Mph</p>              
+          <p><b>Currently: </b><span id="current"></span></p>
+          <p><b>High: </b><span id="temp"></span>°F</p>
+          <p><b>Wind Chill: </b><span id="chill"></span></p>
+          <p><b>Humidity: </b><span id="humidity"></span>%</p>
+          <p><b>Wind Speed: </b><span id="speed"></span> Mph</p>              
         </section>  
     </div>
     <div class="forecastarea">
       <div class="fiveday">
         <h3>Five Day Forecast</h3>
-        <table>
-            <tr>
-              <th>Wed</th>
-              <th>Thu</th>
-              <th>Fri</th>
-              <th>Sat</th>
-              <th>Sun</th>
-            </tr>
-            <tr>
-              <td>☀️<br>89°F</td>
-              <td>☀️<br>87°F</td>
-              <td>☀️<br>78°F</td>
-              <td>☀️<br>75°F</td>
-              <td>☀️<br>72°F</td>
-            </tr>
-        </table>
+        <div class="fiveday-col">
+          <span class="fiveday-head" id="day1"></span>
+          <img id="image1" src="images/placeholder.png" alt="placeholder for forecast days">
+          <span class="fiveday-data" id="data1"></span>
+        </div>
+        <div class="fiveday-col">
+          <span class="fiveday-head" id="day2"></span>
+          <img id="image2" src="images/placeholder.png" alt="placeholder for forecast days">
+          <span class="fiveday-data" id="data2"></span>
+        </div>
+        <div class="fiveday-col">
+          <span class="fiveday-head" id="day3"></span>
+          <img id="image3" src="images/placeholder.png" alt="placeholder for forecast days">
+          <span class="fiveday-data" id="data3"></span>
+        </div>
+        <div class="fiveday-col">
+          <span class="fiveday-head" id="day4"></span>
+          <img id="image4" src="images/placeholder.png" alt="placeholder for forecast days">
+          <span class="fiveday-data" id="data4"></span>
+        </div>
+        <div class="fiveday-col">
+          <span class="fiveday-head" id="day5"></span>
+          <img id="image5" src="images/placeholder.png" alt="placeholder for forecast days">
+          <span class="fiveday-data" id="data5"></span>
+        </div> 
       </div>
     </div>
     <div class="articlearea">
@@ -117,9 +126,10 @@
       <span id="currentdate"></span>
     </div>
   </footer>
+<script src="js/lazyload.js"></script>  
 <script defer src="js/scripts.js"></script>
 <script defer src="js/dates.js"></script>
-<script defer src="js/windchill.js"></script>
+<script defer src="js/weather.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 <script>
   WebFont.load({

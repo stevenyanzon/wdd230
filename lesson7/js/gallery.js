@@ -1,6 +1,6 @@
 let lastVisit;
 
-const milsecondstoDays = 8640000;
+const milsecondstoDays = 86400000;
 
 if ("lastVisit" in localStorage) {
   lastVisit = localStorage.getItem("lastVisit");
