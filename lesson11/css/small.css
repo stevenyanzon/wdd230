@@ -98,6 +98,24 @@ nav ul li.preston a:hover {
   color: #fff;
 }
 
+nav ul li.home a{background-color: rgba(0,0,0,0.4); color: #00A8E8;}
+
+nav ul li.home a:hover {
+  color: #fff;
+}
+
+nav ul li.gallery a{background-color: rgba(0,0,0,0.4); color: #00A8E8;}
+
+nav ul li.gallery a:hover {
+  color: #fff;
+}
+
+nav ul li.storm a{background-color: rgba(0,0,0,0.4); color: #00A8E8;}
+
+nav ul li.storm a:hover {
+  color: #fff;
+}
+
 nav ul li a:hover {background-color: rgba(0,0,0,0.4);
 color: #00A8E8}
 
@@ -300,6 +318,7 @@ figcaption {
 }
 
 form fieldset {
+  max-width: 600px;
   margin: 2rem 0;
   border: 1px solid black;
   border-radius: 10px;
