@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Steven Yanzon's Preston Town Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Weather Website Assignment of Steven Yanzon in WDD230 Week2">
+  <link rel="stylesheet" href="css/normalize.css">
+  <!--<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans&display=swap" rel="stylesheet">-->
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+  <div id="bannerbox" style="display: block;">
+    <p>Saturday = Preston Pancakes in the park!
+    <br>
+      9:00 a.m. Saturday at the city park pavilion!
+    </p>
+    
+  </div>
+  <header>
+    <picture>
+      <img class="logopic" src="images/beelogo.png" alt="website-logo">
+    </picture>
+    <section class="headings"><h1>WeatherBee</h1>
+      <div class="motto">Reach for the weather</div>
+    </section>
+  </header>
+  
+  <main class="thanks">
+    <h1 class="message">Thank You!</h1>
+    <p class="confirm">Your report was successfully submitted!</p>
+    <div class="returnBtn">
+      <button class="return" onclick="window.location.href='https://stevenyanzon.github.io/wdd230/lesson11/stormcenter.html'">Return to Storm Center</button>
+    </div>
+  </main>
+  <footer>
+    <div class="contactarea">
+      <div class="prestonmap">
+        <img src="images/prestonmap1.jpg" alt="map of preston from google maps">
+      </div>
+      <section class="contactinfo">
+        <h4>Weather Bee</h4>
+          <p>📍517 N 8th E, Preston, ID 83263</p>
+          <p>📞(000)000-000</p>
+          <p>📧weatherbee@notreal.com</p>
+        <br>
+        <a href="https://www.facebook.com/" target="_blank"><img class="socialicons" src="images/facebook.png" alt="facebook icon"></a>
+        <a href="https://twitter.com/" target="_blank"><img class="socialicons" src="images/twitter1.png" alt="twitter icon"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img class="socialicons" src="images/instagram.png" alt="instagram icons"></a>
+      </section>
+    </div>
+    <div class="bottompage">
+      &copy; <span id="copyrightyear"></span> | Steven Aldo T.  Yanzon | WDD230 | <a href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a>
+      <br>
+      <span id="currentdate"></span>
+    </div>
+  </footer>
+<script src="js/lazyload.js"></script>
+<script src="js/gallery.js"></script>
+<script src="js/scripts.js"></script>
+<script defer src="js/dates.js"></script>
+<script defer src="js/windchill.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+  WebFont.load({
+    google: {
+      families: ["Open Sans","Montserrat"]
+    }
+  });
+</script>
+
+</body>
+</html>

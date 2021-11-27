@@ -39,10 +39,6 @@ header img {
   margin: 0 0 0 18px;
 }
 
-p {
-  font-family: 'Montserrat', sans-serif;
-}
-
 footer {
   max-width: 100%;
   text-align: center;
@@ -102,24 +98,6 @@ nav ul li.preston a:hover {
   color: #fff;
 }
 
-nav ul li.gallery a{background-color: rgba(0,0,0,0.4); color: #00A8E8;}
-
-nav ul li.gallery a:hover {
-  color: #fff;
-}
-
-nav ul li.storm a{background-color: rgba(0,0,0,0.4); color: #00A8E8;}
-
-nav ul li.storm a:hover {
-  color: #fff;
-}
-
-nav ul li.home a{background-color: rgba(0,0,0,0.4); color: #00A8E8;}
-
-nav ul li.home a:hover {
-  color: #fff;
-}
-
 nav ul li a:hover {background-color: rgba(0,0,0,0.4);
 color: #00A8E8}
 
@@ -137,7 +115,6 @@ nav ul.hidenav {display: none;}
 main {
   display: block;
   margin: 0 auto;
-  width: 100%;
 }
 
 h3 {
@@ -149,21 +126,25 @@ h3 {
   margin: 10px auto;
   position: relative;
   width: 100%;
-  height: 250px;
+  height: auto;
 }
 
 #hero {
   margin: 10px auto;
   width: 100%;
-  height: 250px;
+  height: auto;
 }
 
 #hero img {
   width: 100%;
-  height: 300px;
+  height: auto;
 }
 
 section {
+  display: block;
+}
+
+div {
   display: block;
 }
 
@@ -175,14 +156,14 @@ body {
 #weathersummary {
   background-color: rgba(49,49,49,0.8);
   padding: 10px;
-  margin-top: 4rem;
   text-align: center;
+  margin-bottom: -15px;
 }
 
 #weathersummary h3 {
   font-family: 'Montserrat', sans-serif;
   color: #fff;
-  font-size: 18px;
+  font-size: 1.5rem;
 }
 
 
@@ -190,7 +171,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   height: auto;
   color: #fff;
-  font-size: 15px;
+  font-size: 1rem;
 }
 
 table, th, td {
@@ -220,7 +201,6 @@ table {
   display: grid;
   grid-template-columns: 1fr;
   width: 100%;
-  margin-top: 19rem;
 }
 
 .article {
@@ -234,6 +214,7 @@ table {
 
 .article img {
   width: 100%;
+  height: auto;
 }
 
 
@@ -275,7 +256,6 @@ table {
 .contactinfo span {
   line-height: 1.8rem;
 }
-
 .socialicons {
   width: 70px;
   height: auto;

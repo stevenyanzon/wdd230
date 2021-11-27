@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Steven Yanzon's Preston Town Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Weather Website Assignment of Steven Yanzon in WDD230 Week6">
+  <link rel="stylesheet" href="css/normalize.css">
+  <!--<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans&display=swap" rel="stylesheet">-->
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+  <div id="bannerbox" style="display: block;">
+    <p>Saturday = Preston Pancakes in the park!
+    <br>
+      9:00 a.m. Saturday at the city park pavilion!
+    </p>
+    
+  </div>
+  <header>
+    <picture>
+      <img class="logopic" src="images/beelogo1.png" width="250" height="250" alt="website-logo">
+    </picture>
+    <section class="headings"><h1>WeatherBee</h1>
+      <div class="motto">Reach for the weather</div>
+    </section>
+  </header>
+  <nav>
+    <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hidenav">
+      <li><a href="https://stevenyanzon.github.io/wdd230/lesson9/index.html">Home</a></li>
+      <li class="preston"><a href="https://stevenyanzon.github.io/wdd230/lesson10/preston-10.html">Preston</a></li>
+      <li><a href="#">Soda Springs</a></li>
+      <li><a href="#">Fish Haven</a></li>
+      <li><a href="https://stevenyanzon.github.io/wdd230/lesson8/stormcenter.html">Storm Center</a></li>
+      <li><a href="https://stevenyanzon.github.io/wdd230/lesson7/gallery-7.html">Gallery</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h3>Preston Idaho</h3>
+    <div class="heroarea">
+      <div id="hero">
+        <picture>
+          <source srcset="images/prestontown-large.jpg" media="(min-width: 800px)">
+          <source srcset="images/prestontown-medium.jpg" media="(min-width: 520px) and (max-width: 799px)">
+          <img class="heroimage" src="images/prestontown-small.jpg" alt="preston town image">
+        </picture>
+      </div>  
+        <section id="weathersummary">
+          <h3>Weather Summary</h3>
+          <p><b>Currently: </b><span id="current"></span></p>
+          <p><b>High: </b><span id="temp"></span>°F</p>
+          <p><b>Wind Chill: </b><span id="chill"></span></p>
+          <p><b>Humidity: </b><span id="humidity"></span>%</p>
+          <p><b>Wind Speed: </b><span id="speed"></span> Mph</p>              
+        </section>  
+    </div>
+    <div class="forecastarea">
+      <div class="fiveday">
+        <h3>Five Day Forecast</h3>
+        <div class="fiveday-col">
+          <span class="fiveday-head" id="day1"></span>
+          <img id="image1" src="images/placeholder.png" alt="placeholder for forecast days">
+          <span class="fiveday-data" id="data1"></span>
+        </div>
+        <div class="fiveday-col">
+          <span class="fiveday-head" id="day2"></span>
+          <img id="image2" src="images/placeholder.png" alt="placeholder for forecast days">
+          <span class="fiveday-data" id="data2"></span>
+        </div>
+        <div class="fiveday-col">
+          <span class="fiveday-head" id="day3"></span>
+          <img id="image3" src="images/placeholder.png" alt="placeholder for forecast days">
+          <span class="fiveday-data" id="data3"></span>
+        </div>
+        <div class="fiveday-col">
+          <span class="fiveday-head" id="day4"></span>
+          <img id="image4" src="images/placeholder.png" alt="placeholder for forecast days">
+          <span class="fiveday-data" id="data4"></span>
+        </div>
+        <div class="fiveday-col">
+          <span class="fiveday-head" id="day5"></span>
+          <img id="image5" src="images/placeholder.png" alt="placeholder for forecast days">
+          <span class="fiveday-data" id="data5"></span>
+        </div> 
+      </div>
+    </div>
+    <div class="articlearea">
+      <div class="article">
+        <h3>Festival of Lights</h3>
+        <img class="articlepic" src="images/lights1.jpg" width="640" height="360" alt="christmaslights">
+        <h5><a href="https://kids.kiddle.co/Preston,_Idaho" target="_blank" rel="noopener">kids.kiddle.co</a></h5>
+        <p>Each year Preston holds the "Idaho Festival of Lights", which starts the day after Thanksgiving and goes until December 31. 
+          The festival was started by two local business men (Wayne Bell and Walter Ross) along with many other community organizations to help celebrate Christmas within the community. 
+          The festival consists of a lighted parade, fireworks, and displays in the city park. The merchants along the main street of Preston have their store fronts decorated with Christmas lights during the festival.
+        <br>
+        A key event of the festival is the International Bed Race, which is held on the Saturday following Thanksgiving on the main street of Preston. 
+        Additional events are a kids' parade and free movie.
+        </p>
+      </div>
+    </div>
+    
+  </main>
+  <footer>
+    <div class="contactarea">
+      <div class="prestonmap">
+        <img src="images/prestonmap2.jpg" width="350" height="233" alt="map of preston from google maps">
+      </div>
+      <section class="contactinfo">
+        <h4>Weather Bee</h4>
+          <p rel="noopener">📍517 N 8th E, Preston, ID 83263</p>
+          <p rel="noopener">📞(000)000-000</p>
+          <p rel="noopener">📧weatherbee@notreal.com</p>
+        <br>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener"><img class="socialicons" src="images/facebook.png" width="64" height="64" alt="facebook icon"></a>
+        <a href="https://twitter.com/" target="_blank" rel="noopener"><img class="socialicons" src="images/twitter1.png" width="64" height="64" alt="twitter icon"></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener"><img class="socialicons" src="images/instagram.png" width="64" height="64" alt="instagram icons"></a>
+      </section>
+    </div>
+    <div class="bottompage">
+      &copy; <span id="copyrightyear"></span> | Steven Aldo T.  Yanzon | WDD230 | <a href="https://www.byui.edu/online" target="_blank" rel="noopener">BYUI Online Learning</a>
+      <br>
+      <span id="currentdate"></span>
+    </div>
+  </footer>
+<script src="js/lazyload.js"></script>  
+<script defer src="js/scripts.js"></script>
+<script defer src="js/dates.js"></script>
+<script defer src="js/weather.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+  WebFont.load({
+    google: {
+      families: ["Open Sans","Montserrat"]
+    }
+  });
+</script>
+
+</body>
+</html>
