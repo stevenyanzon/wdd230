@@ -98,6 +98,18 @@ nav ul li.preston a:hover {
   color: #fff;
 }
 
+nav ul li.sodasprings a{background-color: rgba(0,0,0,0.4); color: #00A8E8;}
+
+nav ul li.sodasprings a:hover {
+  color: #fff;
+}
+
+nav ul li.fishhaven a{background-color: rgba(0,0,0,0.4); color: #00A8E8;}
+
+nav ul li.fishhaven a:hover {
+  color: #fff;
+}
+
 nav ul li.home a{background-color: rgba(0,0,0,0.4); color: #00A8E8;}
 
 nav ul li.home a:hover {
@@ -519,4 +531,12 @@ article.homeArticle h5, p {
   font-family: 'Montserrat', sans-serif;
   font-size: 15px;
   margin-left: 10px;
+}
+
+section.events {
+  background-color: #EEF1EF;
+  box-shadow: rgb(51 51 51) 0px 0px 5px;
+  border: 1px solid black;
+  margin-top: 30px;
+  text-align: center;
 }

@@ -1,4 +1,4 @@
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=425daefc2ef0dbf9c29999e6a305ad26";
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5585010&units=imperial&appid=425daefc2ef0dbf9c29999e6a305ad26";
 
 fetch(apiURL)
 .then((response) => response.json())
@@ -30,7 +30,7 @@ fetch(apiURL)
 
 });
 
-const forecastURL ="https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=425daefc2ef0dbf9c29999e6a305ad26";
+const forecastURL ="https://api.openweathermap.org/data/2.5/forecast?id=5585010&units=imperial&appid=425daefc2ef0dbf9c29999e6a305ad26";
 
 fetch(forecastURL)
   .then((response) => response.json())
@@ -81,3 +81,24 @@ fetch(forecastURL)
     document.getElementById("image4").setAttribute("alt", daysforeCast[3].weather[0].description);
     document.getElementById("image5").setAttribute("alt", daysforeCast[4].weather[0].description);
   });
+
+const eventsURL = "https://byui-cit230.github.io/weather/data/towndata.json";
+
+fetch(eventsURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    const towns = jsonObject ["towns"];
+
+    getInformation(towns, 2);
+  });
+
+function getInformation(list, index) {
+  const events = list[index].events;
+  for (let i = 0; i < events.length; i ++) {
+    let event = document.createElement("p");
+    event.textContent = events[i];
+    document.querySelector("section.events").appendChild(event);
+  }
+};
