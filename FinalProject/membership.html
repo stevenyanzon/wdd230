@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Steven Yanzon's Preston Town Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Weather Website Assignment of Steven Yanzon in WDD230 Week2">
+  <link rel="stylesheet" href="css/normalize.css">
+  <!--<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans&display=swap" rel="stylesheet">-->
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Steven Yanzon's Chamber of Commerce Final Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chamber of Commerce Assignment of Steven Yanzon in WDD230">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro&family=Syncopate&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+  </head>
+  <body>
+    <header>
+      <picture>
+        <img class="logopic" src="images/lgzpilogo.png" width="200" height="200" alt="website-logo">
+      </picture>
+      <section class="headings"><h1>Legazpi Chamber of Commerce</h1>
+      </section>
+    </header>
+    <nav>
+      <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="primaryNav" class="hidenav">
+        <li><a href="https://stevenyanzon.github.io/wdd230/lesson11/index.html">Home</a></li>
+        <li><a href="https://stevenyanzon.github.io/wdd230/lesson11/preston.html">Legazpi</a></li>
+        <li><a href="https://stevenyanzon.github.io/wdd230/lesson11/sodasprings.html">Tabaco</a></li>
+        <li><a href="https://stevenyanzon.github.io/wdd230/lesson11/fishhaven.html">Naga</a></li>
+        <li><a href="https://stevenyanzon.github.io/wdd230/lesson11/stormcenter.html">Directory</a></li>
+        <li class="joinus"><a href="https://stevenyanzon.github.io/wdd230/lesson11/gallery.html">Join Us!</a></li>
+      </ul>
+    </nav>
+  <main class="stormArea">
+    <form method="get" action="thanks.html">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label class="top">First Name* <input type="text" name="fname" minlength="5" pattern="[A-Za-z ]+" required></label>
+        <label class="top">Last Name* <input type="text" name="lname" minlength="5" pattern="[A-Za-z ]+" required></label>
+        <label class="top">Title <input type="text" name="title" minlength="5" placeholder="Mr Ms Dr. etc" ></label>
+        <label class="top">Email* <input type="email" name="email" placeholder="email@gmail.com" required></label>
+        <label class="top">Phone <input type="tel" name="phone" placeholder="1234-12345"></label>
+        
+      </fieldset>
+
+      <fieldset>
+        <legend>Business Information</legend>
+        <label class="top">Business Name* <input type="text" name="bname" minlength="1" required ></label>
+        <label class="top">Business Address <input type="text" name="badd" minlength="5" ></label>
+        <label class="top">Business Website <input type="url" name="bsite" minlength="5" ></label>
+        <label class="top">Business Description<input type="url" name="bdesc" minlength="5" ></label>
+        <label class="top">Please Select Type of Membership <input list="memberlevel" name="memberlevel"></label>
+        <datalist id="memberlevel">
+          <option value="Non-Profit - $100"></option>
+          <option value="Bronze - $200"></option>
+          <option value="Silver - $400"></option>
+          <option value="Gold - $1000"></option>
+        </datalist>
+      <h2>Benefits</h2>
+      <p><b>Non profit</b>: Access to exclusive discounts from other businesses who is also a member of the chamber. </p>
+      <p><b>Bronze</b>: Access to exclusive discounts and trainings being provided for chamber members.</p>
+      <p><b>Silver</b>: Non Profit and Bronze benefits with additional advertisements on chamber of commerce website and social media.</p>
+      <p><b>Gold</b>: Exlusive partnership with sponsors plus advertisments in social media and other sources along with the other benefits from the previos options.</p>
+
+      <input type="submit" value="Join us!" name="submitbutton" class="submitBtn">
+    </form>
+
+  </main>
+  <footer>
+    <div class="contactarea">
+      <div class="legazpimap">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d18481.273331504057!2d123.73653240696213!3d13.14921516223929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1639220644535!5m2!1sen!2sph" width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe></img>
+      </div>
+      <section class="contactinfo">
+        <h4>Legazpi Chamber of Commerce</h4>
+          <p rel="noopener">📍P5 Gogon, Legazpi City Albay 4500</p>
+          <p rel="noopener">📞(000)000-000</p>
+          <p rel="noopener">📧legazpichamber@notreal.com</p>
+        <br>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener"><img class="socialicons" src="images/facebook.png" width="64" height="64" alt="facebook icon"></a>
+        <a href="https://twitter.com/" target="_blank" rel="noopener"><img class="socialicons" src="images/twitter1.png" width="64" height="64" alt="twitter icon"></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener"><img class="socialicons" src="images/instagram.png" width="64" height="64" alt="instagram icons"></a>
+      </section>
+    </div>
+    <div class="bottompage">
+      &copy; <span id="copyrightyear"></span> | Steven Aldo T.  Yanzon | WDD230 | <a href="https://www.byui.edu/online" target="_blank" rel="noopener">BYUI Online Learning</a>
+      <br>
+      <span id="currentdate"></span>
+    </div>
+  </footer>
+<script defer src="js/lazyload.js"></script>
+<script defer src="js/main.js"></script>
+<script defer src="js/dates.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+</body>
+</html>

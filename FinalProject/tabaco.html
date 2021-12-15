@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Steven Yanzon's Chamber of Commerce Final Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chamber of Commerce Assignment of Steven Yanzon in WDD230">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro&family=Syncopate&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+  </head>
+  <body>
+    <header>
+      <picture>
+        <img class="logopic" src="images/lgzpilogo.png" width="200" height="200" alt="website-logo">
+      </picture>
+      <section class="headings"><h1>Legazpi Chamber of Commerce</h1>
+      </section>
+    </header>
+    <nav>
+      <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="primaryNav" class="hidenav">
+        <li><a href="https://stevenyanzon.github.io/wdd230/lesson11/index.html">Home</a></li>
+        <li><a href="https://stevenyanzon.github.io/wdd230/lesson11/preston.html">Legazpi</a></li>
+        <li class="tabaco"><a href="https://stevenyanzon.github.io/wdd230/lesson11/sodasprings.html">Tabaco</a></li>
+        <li><a href="https://stevenyanzon.github.io/wdd230/lesson11/fishhaven.html">Naga</a></li>
+        <li><a href="https://stevenyanzon.github.io/wdd230/lesson11/stormcenter.html">Directory</a></li>
+        <li><a href="https://stevenyanzon.github.io/wdd230/lesson11/gallery.html">Join Us!</a></li>
+      </ul>
+    </nav>
+  <main>
+    <h3 class="title">Tabaco City</h3>
+    <div class="heroarea">
+      <div id="hero">
+        <picture>
+          <source srcset="images/tabaco-large.jpg" media="(min-width: 800px)">
+          <source srcset="images/tabaco-med.jpg" media="(min-width: 520px) and (max-width: 799px)">
+          <img class="heroimage" src="images/tabaco-small.jpg" alt="preston town image">
+        </picture>
+      </div>  
+        <section id="weathersummary">
+          <h3>Weather Summary</h3>
+          <p><b>Currently: </b><span id="current"></span></p>
+          <p><b>High: </b><span id="temp"></span>°F</p>
+          <p><b>Wind Chill: </b><span id="chill"></span></p>
+          <p><b>Humidity: </b><span id="humidity"></span>%</p>
+          <p><b>Wind Speed: </b><span id="speed"></span> Mph</p>              
+        </section>  
+    </div>
+    <div class="forecastarea">
+      <div class="fiveday">
+        <h3>Three Day Forecast</h3>
+        <div class="fiveday-col">
+          <span class="fiveday-head" id="day1"></span>
+          <img id="image1" src="images/placeholder.png" alt="placeholder for forecast days">
+          <span class="fiveday-data" id="data1"></span>
+        </div>
+        <div class="fiveday-col">
+          <span class="fiveday-head" id="day2"></span>
+          <img id="image2" src="images/placeholder.png" alt="placeholder for forecast days">
+          <span class="fiveday-data" id="data2"></span>
+        </div>
+        <div class="fiveday-col">
+          <span class="fiveday-head" id="day3"></span>
+          <img id="image3" src="images/placeholder.png" alt="placeholder for forecast days">
+          <span class="fiveday-data" id="data3"></span>
+        </div>
+
+      </div>
+    </div>
+    <section class="events">
+      <h3>Events</h3>
+      <p>June 15-25: Tabak Festival</p>
+      <p>June 15-25: Mutya ng Tabak</p>
+      <p>JUne 15-25: Street Parade and other activities</p>
+    </section>
+    <div class="articlearea">
+      <div class="article">
+        <h3>Tabak Festival</h3>
+        <img class="articlepic" src="images/tabak.jpg" width="500" height="360" alt="christmaslights">
+        <h5><a href="http://www.traveltothephilippines.info/tag/tabak-festival/" target="_blank" rel="noopener">traveltothephilippines.com</a></h5>
+        <p> The Tabak Festival is an annual celebration in Tabaco, Albay in Bicol. The celebration of the said festival began in 2002. The Festival is celebrated by conducting various activities such as 
+          the street dancing competition, Mutya ng Tabak which is an annual beauty pageant, Sibidan and the Padyak Race, and various shows, fairs, trades, and exhibits.
+          The street of Tabaco is filled with wonderful colors during the street dance competition which is participated by Tabaquenos and participants from other parts of Bicol. 
+          There is also the Karawat Bicolnon, a sports activity for the different contingents. It shows the festive spirit of Tabaquenos and Bicolanos alike.
+          The Tabak Festival celebrates the city’s renowned craft of making the Tabak, a type of sword used mostly by farmers to cut through shrubs and other plants to clear a field or just plainly cut open a fresh coconut. 
+          The city formulated the festival to celebrate annually the its cityhood in 2003 just a year after it was granted such status.
+          The festival focuses on the Tabak’s culture and its people’s daily lives. It aims to celebrate the spirit of the city’s community caring for each other and living harmoniously. Fittingly, the city hashtagged #cityoflove during the festivities and yes, 
+          you can see love all around. You can feel that more than competing with each other, contenders enjoy and show their best for the love of their city.
+        </p>
+      </div>
+    </div>
+    
+  </main>
+  <footer>
+    <div class="contactarea">
+      <div class="legazpimap">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d18481.273331504057!2d123.73653240696213!3d13.14921516223929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1639220644535!5m2!1sen!2sph" width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe></img>
+      </div>
+      <section class="contactinfo">
+        <h4>Legazpi Chamber of Commerce</h4>
+          <p rel="noopener">📍P5 Gogon, Legazpi City Albay 4500</p>
+          <p rel="noopener">📞(000)000-000</p>
+          <p rel="noopener">📧legazpichamber@notreal.com</p>
+        <br>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener"><img class="socialicons" src="images/facebook.png" width="64" height="64" alt="facebook icon"></a>
+        <a href="https://twitter.com/" target="_blank" rel="noopener"><img class="socialicons" src="images/twitter1.png" width="64" height="64" alt="twitter icon"></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener"><img class="socialicons" src="images/instagram.png" width="64" height="64" alt="instagram icons"></a>
+      </section>
+    </div>
+    <div class="bottompage">
+      &copy; <span id="copyrightyear"></span> | Steven Aldo T.  Yanzon | WDD230 | <a href="https://www.byui.edu/online" target="_blank" rel="noopener">BYUI Online Learning</a>
+      <br>
+      <span id="currentdate"></span>
+    </div>
+  </footer>
+<script src="js/lazyload.js"></script>  
+<script defer src="js/scripts.js"></script>
+<script defer src="js/dates.js"></script>
+<script defer src="js/tabaco.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+</body>
+</html>

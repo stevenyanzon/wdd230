@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Steven Yanzon's Chamber of Commerce Final Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chamber of Commerce Assignment of Steven Yanzon in WDD230">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href="https://fonts.googleapis.com/css2?family=Advent+Pro&family=Syncopate&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+  <header>
+    <picture>
+      <img class="logopic" src="images/lgzpilogo.png" width="200" height="200" alt="website-logo">
+    </picture>
+    <section class="headings"><h1>Legazpi Chamber of Commerce</h1>
+    </section>
+  </header>
+  <nav>
+    <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hidenav">
+      <li class="home"><a href="https://stevenyanzon.github.io/wdd230/lesson11/index.html">Home</a></li>
+      <li><a href="https://stevenyanzon.github.io/wdd230/lesson11/preston.html">Legazpi</a></li>
+      <li><a href="https://stevenyanzon.github.io/wdd230/lesson11/sodasprings.html">Tabaco</a></li>
+      <li><a href="https://stevenyanzon.github.io/wdd230/lesson11/fishhaven.html">Naga</a></li>
+      <li><a href="https://stevenyanzon.github.io/wdd230/lesson11/stormcenter.html">Directory</a></li>
+      <li><a href="https://stevenyanzon.github.io/wdd230/lesson11/gallery.html">Join Us!</a></li>
+    </ul>
+  </nav>
+  <main class="home">
+    <div class="heroArea">
+      <picture>
+        <source srcset="images/mountmayon-large.jpg" media="(min-width: 800px)">
+        <source srcset="images/mountmayon-med.jpg" media="(min-width: 520px) and (max-width: 799px)">
+        <img src="images/mountmayon-small.jpg" alt="mount mayon">
+      </picture>
+    </div>
+    <section class="chamber">
+      <h2 id="chamberHome">Welcome to Legazpi Chamber of Commerce</h2>
+      <p>A network of local businesses whose goal is to promote the tourism and advocate the business community in the area. 
+        Join us to become a member and know the businesses and the services they offer in the area or 
+        promote the local businesses and tourist destinations to your families and friends, and even promote your own business.  </p>
+    </section>
+    <div class="join">
+      <a href="#">Join Us!</a>
+    </div>
+    <section class="business">
+      <h2>Local Businesses</h2>
+      <article class="business1">
+        <div class="content">
+          <h2>1st Colonial Grill</h2>
+          <p>Home of Sili Ice-Cream - Spicy Flavored Ice Cream</p>
+          <a href="https://www.facebook.com/pages/1st-Colonial-SM-City-Legazpi/1884387928306415" target="_blank" rel="noopener">Facebook Page</a>
+        </div>
+        <div class="image">
+          <img src="images/colonial.jpg" alt="sili ice cream">
+        </div>
+      </article>
+      <article class="business2">
+        <div class="content">
+          <h2>Cagsawa Ruins Park and Resort</h2>
+          <p>The Cagsawa Ruins are the 
+            remnants of an 18th century Franciscan church. Built in 1724 and 
+            destroyed by the 1814 eruption of the Mayon Volcano. </p>
+          <a href="https://www.facebook.com/Cagsawa-Ruins-Park-Resort-280451721965995" target="_blank" rel="noopener">Facebook Page</a>
+        </div>
+        <div class="image">
+          <img src="images/cagsawa.jpg" alt="sili ice cream">
+        </div>
+      </article>
+      <article class="business3">
+        <div class="content">
+          <h2>The Oriental Legazpi</h2>
+          <p>A Filipino-centric hotel chain focusing on its unique heritage and hospitality.
+            Amidst a backdrop of the majestic Mayon Volcano and the blue waters of the Gulf of Albay. </p>
+          <a href="https://www.facebook.com/TheOrientalLegazpi" target="_blank" rel="noopener">Facebook Page</a>
+        </div>
+        <div class="image">
+          <img src="images/oriental.jpg" alt="sili ice cream">
+        </div>
+      </article>
+    </section>
+
+  </main>
+  <footer>
+    <div class="contactarea">
+      <div class="legazpimap">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d18481.273331504057!2d123.73653240696213!3d13.14921516223929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1639220644535!5m2!1sen!2sph" width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe></img>
+      </div>
+      <section class="contactinfo">
+        <h4>Legazpi Chamber of Commerce</h4>
+          <p rel="noopener">📍P5 Gogon, Legazpi City Albay 4500</p>
+          <p rel="noopener">📞(000)000-000</p>
+          <p rel="noopener">📧legazpichamber@notreal.com</p>
+        <br>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener"><img class="socialicons" src="images/facebook.png" width="64" height="64" alt="facebook icon"></a>
+        <a href="https://twitter.com/" target="_blank" rel="noopener"><img class="socialicons" src="images/twitter1.png" width="64" height="64" alt="twitter icon"></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener"><img class="socialicons" src="images/instagram.png" width="64" height="64" alt="instagram icons"></a>
+      </section>
+    </div>
+    <div class="bottompage">
+      &copy; <span id="copyrightyear"></span> | Steven Aldo T.  Yanzon | WDD230 | <a href="https://www.byui.edu/online" target="_blank" rel="noopener">BYUI Online Learning</a>
+      <br>
+      <span id="currentdate"></span>
+    </div>
+  </footer>
+<script defer src="js/lazyload.js"></script>
+<script defer src="js/main.js"></script>
+<script defer src="js/dates.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+</body>
+</html>

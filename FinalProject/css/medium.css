@@ -1,0 +1,176 @@
+@media only screen and (min-width: 38rem) {
+      
+  header .headings {
+    font-size: 1.1rem;
+  }
+
+  header .motto {
+    font-size: .8rem;
+  }
+
+  footer {
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+    font-size: 1rem;
+    margin: 0 auto;
+    display: block;
+ 
+  }
+
+  h3 {
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 23px;
+    color: #55828B;
+  } 
+
+
+  #weathersummary {
+    position: absolute;
+    top: 20px;
+    left: 75px;
+    background-color: rgba(49,49,49,0.8);
+    padding: 10px;
+    margin: auto;
+  }
+  
+
+  .forecastarea {
+    margin-bottom: 5px;
+    max-width: 100%;
+    border: solid 1px black;
+    padding: 10px;
+    box-shadow: 0 0 5px #333;
+    background-color: #EEF1EF;
+
+  }
+  .forecastarea {
+    display: block;
+  }
+  .fiveday {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+
+  }
+
+  .fiveday h3 {
+    display: block;
+    margin-right: 10px;
+    color: #55828B;
+  }
+
+  .fiveday-data {
+    text-align: center;
+    align-items: center;
+    margin: 30px 30px;
+  }
+  
+  .fiveday-col {
+    font-size: 16px;
+    text-align: center;
+    border-left: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 auto;
+  }
+
+  .fiveday-col img {
+    width: 50px;
+    padding: .25rem;
+    border-radius: 100px;
+    margin: 0px 30px 0px 30px;
+  }
+
+  .fiveday-head {
+    display: block;
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
+  }
+
+
+  .articlearea {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .article img {
+    float: right;
+    margin: 1rem;
+    width: 400px;
+    height: 250px;
+    border: 1px solid rgb(41,42,41);
+    box-shadow: 0 0 5px #333;
+  }
+  
+  .contactarea {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .busdirect {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  section.business {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  article.business1 {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  article.business2 {
+    flex-direction: row-reverse;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  article.business3 {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .business2 div.content {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+  }
+
+  .business2 img {
+    width: 100%;
+  }
+  
+  section.business article div img {
+    width: 80%;
+    height: auto;
+    margin-top: 15px;
+  }
+
+  article.homeArticle {
+    flex-direction: row-reverse;
+  }
+
+  article.homeArticle img {
+    width: 50%;
+    float: right;
+    padding: 10px;
+  }
+
+  section.events {
+    margin-top: 20px;
+  }
+
+}  

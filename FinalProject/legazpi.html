@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Steven Yanzon's Chamber of Commerce Final Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chamber of Commerce Assignment of Steven Yanzon in WDD230">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro&family=Syncopate&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+  </head>
+  <body>
+    <header>
+      <picture>
+        <img class="logopic" src="images/lgzpilogo.png" width="200" height="200" alt="website-logo">
+      </picture>
+      <section class="headings"><h1>Legazpi Chamber of Commerce</h1>
+      </section>
+    </header>
+    <nav>
+      <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="primaryNav" class="hidenav">
+        <li><a href="https://stevenyanzon.github.io/wdd230/lesson11/index.html">Home</a></li>
+        <li class="legazpi"><a href="https://stevenyanzon.github.io/wdd230/lesson11/preston.html">Legazpi</a></li>
+        <li><a href="https://stevenyanzon.github.io/wdd230/lesson11/sodasprings.html">Tabaco</a></li>
+        <li><a href="https://stevenyanzon.github.io/wdd230/lesson11/fishhaven.html">Naga</a></li>
+        <li><a href="https://stevenyanzon.github.io/wdd230/lesson11/stormcenter.html">Directory</a></li>
+        <li><a href="https://stevenyanzon.github.io/wdd230/lesson11/gallery.html">Join Us!</a></li>
+      </ul>
+    </nav>
+  <main>
+    <h3 class="title">Legazpi City</h3>
+    <div class="heroarea">
+      <div id="hero">
+        <picture>
+          <source srcset="images/puro-large.jpg" media="(min-width: 800px)">
+          <source srcset="images/puro-med.jpg" media="(min-width: 520px) and (max-width: 799px)">
+          <img class="heroimage" src="images/puro-small.jpg" alt="preston town image">
+        </picture>
+      </div>  
+        <section id="weathersummary">
+          <h3>Weather Summary</h3>
+          <p><b>Currently: </b><span id="current"></span></p>
+          <p><b>High: </b><span id="temp"></span>°F</p>
+          <p><b>Wind Chill: </b><span id="chill"></span></p>
+          <p><b>Humidity: </b><span id="humidity"></span>%</p>
+          <p><b>Wind Speed: </b><span id="speed"></span> Mph</p>              
+        </section>  
+    </div>
+    <div class="forecastarea">
+      <div class="fiveday">
+        <h3>Three Day Forecast</h3>
+        <div class="fiveday-col">
+          <span class="fiveday-head" id="day1"></span>
+          <img id="image1" src="images/placeholder.png" alt="placeholder for forecast days">
+          <span class="fiveday-data" id="data1"></span>
+        </div>
+        <div class="fiveday-col">
+          <span class="fiveday-head" id="day2"></span>
+          <img id="image2" src="images/placeholder.png" alt="placeholder for forecast days">
+          <span class="fiveday-data" id="data2"></span>
+        </div>
+        <div class="fiveday-col">
+          <span class="fiveday-head" id="day3"></span>
+          <img id="image3" src="images/placeholder.png" alt="placeholder for forecast days">
+          <span class="fiveday-data" id="data3"></span>
+        </div>
+
+      </div>
+    </div>
+    <section class="events">
+      <h3>Events</h3>
+      <p>February 1-29: Cagsawa Festival</p>
+      <p>May 1-31: Magayon Festival</p>
+      <p>August 10-19: Ibalong Festival</p>
+    </section>
+    <div class="articlearea">
+      <div class="article">
+        <h3>Magayon Festival</h3>
+        <img class="articlepic" src="images/magayonfest.jpg" width="500" height="360" alt="christmaslights">
+        <h5><a href="https://expertworldtravel.com/philippines/magayon-festival/" target="_blank" rel="noopener">expertworldtravel.com</a></h5>
+        <p>Magayon Festival is a yearly celebration derived from the legend of the Mayon Volcano to honor the province’s bounty and beauty. The festival is held in Legazpi City of the Albay province on Bicol island.
+
+          The most spectacular thing about this festival is that it blends the culture, religion as well as the rich heritage of the locals in Albay, Philippines. 
+          For those who have long been fascinated by the culture of the Filipinos, there is no better way to immerse oneself in the lifestyle of locals.
+          <br>
+          The reason for this celebration dates back to ancient days following the death of the love-struck woman, Daragang Magayon. Folklore has it that the death of the beautiful woman resulted in the creation of the Mayon Volcano. The floating clouds, the locals believe, are symbolic of the spirit of Daragang’s lover.
+          Little wonder the name of the festival, Magayon Festival, is actually derived from a local word that means ‘beautiful’. During the celebrations, the streets come alive with the presence of diverse cultural events where the locals showcase their traditional way of life.
+          The great thing about this festival is that it lasts for at least two weeks. It usually begins in the middle of February and closes on the last day of the month. This means you have plenty of time to join in the festivities and meet the locals of the Albay province.
+
+Festivals in the Philippines are known for all sorts of sports competitions, so it’s no surprise that there’s plenty of those during Magayon Festival. A trail run is usually held on the second day of the festival, and it tends to start really early in the morning. If you want to show everyone just how in shape you are, this is an awesome way to partake in the festivities.
+        </p>
+      </div>
+    </div>
+    
+  </main>
+  <footer>
+    <div class="contactarea">
+      <div class="legazpimap">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d18481.273331504057!2d123.73653240696213!3d13.14921516223929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1639220644535!5m2!1sen!2sph" width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe></img>
+      </div>
+      <section class="contactinfo">
+        <h4>Legazpi Chamber of Commerce</h4>
+          <p rel="noopener">📍P5 Gogon, Legazpi City Albay 4500</p>
+          <p rel="noopener">📞(000)000-000</p>
+          <p rel="noopener">📧legazpichamber@notreal.com</p>
+        <br>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener"><img class="socialicons" src="images/facebook.png" width="64" height="64" alt="facebook icon"></a>
+        <a href="https://twitter.com/" target="_blank" rel="noopener"><img class="socialicons" src="images/twitter1.png" width="64" height="64" alt="twitter icon"></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener"><img class="socialicons" src="images/instagram.png" width="64" height="64" alt="instagram icons"></a>
+      </section>
+    </div>
+    <div class="bottompage">
+      &copy; <span id="copyrightyear"></span> | Steven Aldo T.  Yanzon | WDD230 | <a href="https://www.byui.edu/online" target="_blank" rel="noopener">BYUI Online Learning</a>
+      <br>
+      <span id="currentdate"></span>
+    </div>
+  </footer>
+<script src="js/lazyload.js"></script>  
+<script defer src="js/scripts.js"></script>
+<script defer src="js/dates.js"></script>
+<script defer src="js/legazpi.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+</body>
+</html>

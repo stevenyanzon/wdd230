@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Steven Yanzon's Chamber of Commerce Final Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chamber of Commerce Assignment of Steven Yanzon in WDD230">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro&family=Syncopate&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+  </head>
+  <body>
+    <header>
+      <picture>
+        <img class="logopic" src="images/lgzpilogo.png" width="200" height="200" alt="website-logo">
+      </picture>
+      <section class="headings"><h1>Legazpi Chamber of Commerce</h1>
+      </section>
+    </header>
+    <nav>
+      <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="primaryNav" class="hidenav">
+        <li><a href="https://stevenyanzon.github.io/wdd230/lesson11/index.html">Home</a></li>
+        <li><a href="https://stevenyanzon.github.io/wdd230/lesson11/preston.html">Legazpi</a></li>
+        <li><a href="https://stevenyanzon.github.io/wdd230/lesson11/sodasprings.html">Tabaco</a></li>
+        <li class="naga"><a href="https://stevenyanzon.github.io/wdd230/lesson11/fishhaven.html">Naga</a></li>
+        <li><a href="https://stevenyanzon.github.io/wdd230/lesson11/stormcenter.html">Directory</a></li>
+        <li><a href="https://stevenyanzon.github.io/wdd230/lesson11/gallery.html">Join Us!</a></li>
+      </ul>
+    </nav>
+  <main>
+    <h3 class="title">Naga City</h3>
+    <div class="heroarea">
+      <div id="hero">
+        <picture>
+          <source srcset="images/Naga-large.jpg" media="(min-width: 800px)">
+          <source srcset="images/Naga-med.jpg" media="(min-width: 520px) and (max-width: 799px)">
+          <img class="heroimage" src="images/Naga-small.jpg" alt="preston town image">
+        </picture>
+      </div>  
+        <section id="weathersummary">
+          <h3>Weather Summary</h3>
+          <p><b>Currently: </b><span id="current"></span></p>
+          <p><b>High: </b><span id="temp"></span>°F</p>
+          <p><b>Wind Chill: </b><span id="chill"></span></p>
+          <p><b>Humidity: </b><span id="humidity"></span>%</p>
+          <p><b>Wind Speed: </b><span id="speed"></span> Mph</p>              
+        </section>  
+    </div>
+    <div class="forecastarea">
+      <div class="fiveday">
+        <h3>Three Day Forecast</h3>
+        <div class="fiveday-col">
+          <span class="fiveday-head" id="day1"></span>
+          <img id="image1" src="images/placeholder.png" alt="placeholder for forecast days">
+          <span class="fiveday-data" id="data1"></span>
+        </div>
+        <div class="fiveday-col">
+          <span class="fiveday-head" id="day2"></span>
+          <img id="image2" src="images/placeholder.png" alt="placeholder for forecast days">
+          <span class="fiveday-data" id="data2"></span>
+        </div>
+        <div class="fiveday-col">
+          <span class="fiveday-head" id="day3"></span>
+          <img id="image3" src="images/placeholder.png" alt="placeholder for forecast days">
+          <span class="fiveday-data" id="data3"></span>
+        </div>
+
+      </div>
+    </div>
+    <section class="events">
+      <h3>Events</h3>
+      <p>September 3rd Week: Peñafrancia Festival</p>
+      <p>September 11: Miss Bicolandia</p>
+      <p>December 1-31: Kamundagan Festival</p>
+    </section>
+    <div class="articlearea">
+      <div class="article">
+        <h3>Peñafrancia Festival</h3>
+        <img class="articlepic" src="images/penafrancia.jpg" width="500" height="360" alt="christmaslights">
+        <h5><a href="https://www.zenrooms.com/blog/post/penafrancia-festival/" target="_blank" rel="noopener">zenrooms.com</a></h5>
+        <p>The Peñafrancia Festival History can be traced back to somewhere 300 years ago when Fr. Miguel Robles de Covarrubias commissioned a small chapel at the foot of Mt. Isarog, and a small Our Lady of Penafrancia image to be enshrined in it in 1710. 
+          Originally, he has pledged to build a stone Our Lady of Peñafrancia Church in Manila near the Pasig River as he has received many miracles of healing through his devotion to the Our Lady of Penafrancia. Under Most Rev. Ysidro de Arevalo, 
+          the stone Basilica of Our Lady of Penafrancia was erected, not in Manila but in Naga. Many people since then are flocking to the Basilica of Our Lady of Penafrancia to show their devotion and has since grown to become the largest Marian Devotion in Asia. 
+          Then on August 17, 1981, the Our Lady of Peñafrancia original image was stolen. Many Bicolanos were in disbelief. More than a year after the image was stolen, Msgr. Florencio Yllana, a former rector of the old shrine, received a box containing an image in 
+          pieces said to be of Ina (what locals lovingly call the Lady of Penafrancia). It was later confirmed that it is the Our Lady of Penafrancia image.
+          The love and devotion that many people have for Ina gave birth to the most-awaited and biggest Marian event in Asia: The Penafrancia Fiesta.
+        </p>
+      </div>
+    </div>
+    
+  </main>
+  <footer>
+    <div class="contactarea">
+      <div class="legazpimap">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d18481.273331504057!2d123.73653240696213!3d13.14921516223929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1639220644535!5m2!1sen!2sph" width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe></img>
+      </div>
+      <section class="contactinfo">
+        <h4>Legazpi Chamber of Commerce</h4>
+          <p rel="noopener">📍P5 Gogon, Legazpi City Albay 4500</p>
+          <p rel="noopener">📞(000)000-000</p>
+          <p rel="noopener">📧legazpichamber@notreal.com</p>
+        <br>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener"><img class="socialicons" src="images/facebook.png" width="64" height="64" alt="facebook icon"></a>
+        <a href="https://twitter.com/" target="_blank" rel="noopener"><img class="socialicons" src="images/twitter1.png" width="64" height="64" alt="twitter icon"></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener"><img class="socialicons" src="images/instagram.png" width="64" height="64" alt="instagram icons"></a>
+      </section>
+    </div>
+    <div class="bottompage">
+      &copy; <span id="copyrightyear"></span> | Steven Aldo T.  Yanzon | WDD230 | <a href="https://www.byui.edu/online" target="_blank" rel="noopener">BYUI Online Learning</a>
+      <br>
+      <span id="currentdate"></span>
+    </div>
+  </footer>
+<script src="js/lazyload.js"></script>  
+<script defer src="js/scripts.js"></script>
+<script defer src="js/dates.js"></script>
+<script defer src="js/naga.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+</body>
+</html>
